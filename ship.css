@@ -1,0 +1,43 @@
+
+/* Stylesheet for assigning properties to ship parts */
+
+.candrag {
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+}
+
+#turret1 {
+	position: relative;
+	top: 20px;
+	left: 10px;
+
+}
+
+
+#turret2 {
+	position: relative;
+	top: 20px;
+	left: 50px;
+
+}
+
+
+img:first-child {
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 13px;
+}
+
+#hull {
+	position: absolute;
+	width: 1000px;
+	height: 60px;
+	top: 90px;
+	left: 100px;
+	background: #777777;
+
+	border-bottom-left-radius: 60%;
+	border-bottom-right-radius: 60%;
+
+}

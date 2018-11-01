@@ -3,20 +3,42 @@
 	<!--Contains title of page-->
 	<head>
 		<title>Build your own ship</title>
+
+		<!--Load the CSS stylesheets (using CDNs) to give ship parts their properties and allow bootstrap functionality-->
+		<link rel="stylesheet" type = "text/css" href="ship.css"></style>
+		<link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css"></style>
+
+		<!--Load the JQuery code and bootstrap JS code using CDNs-->
+		<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	</head>
 
-	<body style="background: #777777;">
+	<body>
 		<!--Each ship part has its own id, but all parts have the same class for dragging-->
+		<h1>This is a page where you can drag and drop parts to make your dream ship</h1>
 
-		<div id="turret"></div>
+		<!--Turrets-->
+		<div id="turret1" class="candrag">
+			<img src = "turret.png">
+		</div>
 
-		<div id="turret"></div>
+		<div id="turret2" class="candrag">	
+			<img src = "turret_flipped.png">
+		</div>
 
-		<div id="turret"></div>
+		<div id="turret3"></div>
 
-		<div id="turret"></div>
+		<div id="turret4"></div>
 
-		<div id="hull"></div>
+		<!--Hull-->
+		<div id="hull" class="candrag"></div>
+
+		<!--Bridge-->
+		<div id="bridge" class="candrag"></div>
+
+		<!--Make all the objects draggable-->
+		<script type = "text/javascript" src="ship.js"></script>
 
 	</body>
+
 </html>
