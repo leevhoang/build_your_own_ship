@@ -1,43 +1,60 @@
 
-/* Stylesheet for assigning properties to ship parts */
+/* For assigning properties to ship parts */
 
+
+/* This property applies to all ship parts */
 .candrag {
 	cursor: pointer;
 	width: 100px;
 	height: 100px;
 }
 
+/* Turrets have their own ids */
 #turret1 {
-	position: relative;
-	top: 20px;
-	left: 10px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
 
 }
 
 
 #turret2 {
-	position: relative;
-	top: 20px;
+	position: absolute;
+	top: 5px;
 	left: 50px;
 
 }
 
 
-img:first-child {
+#turret3 {
 	position: absolute;
-	margin-top: 35px;
-	margin-left: 13px;
+	top: 5px;
+	left: 100px;
+
 }
 
-#hull {
-	position: absolute;
-	width: 1000px;
-	height: 60px;
-	top: 90px;
-	left: 100px;
-	background: #777777;
 
-	border-bottom-left-radius: 60%;
-	border-bottom-right-radius: 60%;
+#turret4 {
+	position: absolute;
+	top: 5px;
+	left: 150px;
+
+}
+
+
+
+/*  */
+img:first-child {
+	position: absolute;
+	cursor: pointer;
+}
+
+/* Hulls have their ids */
+#hull{
+	position: absolute;
+	width: 958px;
+	height:103px;
+	top: 90px;
+	left: 200px;
 
 }
