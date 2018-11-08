@@ -1,3 +1,6 @@
+What this project is about
+---------------------------
+
 This project allows the user to create his/her own warship using draggable parts, ranging from hulls to turrets and superstructure parts.
 
 How to use
