@@ -14,36 +14,53 @@
 	</head>
 
 	<body>
-		<!-- Each ship part has its own id, but all parts have the same class for dragging -->
-		<h1>This is a page where you can drag and drop parts to make your dream ship</h1>
+		<!--Main page-->
+		<div id="container">
+			<!-- Each ship part has its own id, but all parts have the same class for dragging -->
+			<!--<h1 class="text-center bg-dark text-light">
+				Welcome! This is a page where you can drag and drop parts to make your dream ship.
+			</h1>-->
 
-		<!--Turrets-->
-		<div id="turret1" class="candrag">
-			<img src = "turret1.svg" draggable=false>
+			<!--Navigation bar-->
+			<nav class="navbar navbar-expand-md bg-dark">
+				<h1 class="text-center text-light">
+					<span style="color: #fdc53e;">Welcome!</span> This is a page where you can drag and drop parts to make your <span style="color: #fdc53e;">warship of your dreams.</span>
+				</h1>
+			</nav>
+
+			<!--Turrets (Style 1) -->
+			<div id="turret1" class="candrag">
+				<img src = "turret1.svg" draggable=false>
+			</div>
+
+			<div id="turret2" class="candrag">	
+				<img src = "turret1_rev.svg" draggable=false>
+			</div>
+
+			<div id="turret3" class="candrag">
+				<img src = "turret1.svg" draggable=false>
+			</div>
+
+			<div id="turret4" class="candrag">
+				<img src = "turret1_rev.svg" draggable=false>
+			</div>
+
+			<!--Hull (Style 1)-->
+			<div id="hull" class="candrag">
+				<img src="hull.svg" draggable=false>
+			</div>
+
+			<!--Superstructure and Bridge parts-->
+
+			<div id="center" class="candrag"></div>
+			<div id="bridge" class="candrag"></div>
+			<div id="smokestack" class="candrag"></div>
+			<div id="smokestack" class="candrag"></div>
+
+
+			<!--Make all the objects draggable-->
+			<script type = "text/javascript" src="ship.js"></script>
 		</div>
-
-		<div id="turret2" class="candrag">	
-			<img src = "turret1_rev.svg" draggable=false>
-		</div>
-
-		<div id="turret3" class="candrag">
-			<img src = "turret1.svg" draggable=false>
-		</div>
-
-		<div id="turret4" class="candrag">
-			<img src = "turret1_rev.svg" draggable=false>
-		</div>
-
-		<!--Hull-->
-		<div id="hull" class="candrag">
-			<img src="hull.svg" draggable=false>
-		</div>
-
-		<!--Bridge-->
-		<div id="bridge" class="candrag"></div>
-
-		<!--Make all the objects draggable-->
-		<script type = "text/javascript" src="ship.js"></script>
 
 	</body>
 
