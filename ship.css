@@ -1,5 +1,14 @@
 
 /* For assigning properties to ship parts */
+/* All the parts are arranged such that they don't overlap each other */
+
+
+/* Set initial bg color to change later */
+body {
+	background-image: none;
+	background-color: white;
+
+}
 
 
 /* This property applies to all ship parts */
@@ -44,13 +53,13 @@
 
 
 
-/*  */
+/* For correctly styling parts */
 img:first-child {
 	position: absolute;
 	cursor: pointer;
 }
 
-/* Hulls have their ids */
+/* Hull Style 1 */
 #hull{
 	position: absolute;
 	width: 958px;
@@ -60,28 +69,43 @@ img:first-child {
 
 }
 
+
+/* Hull Style 2 */
+#hull2{
+	position: absolute;
+	top: 300px;
+	left: 500px;
+
+}
+
+
 /* All center parts including the bridge, mast, and raised platform */
 #center {
 	position: absolute;
-	background: grey;
-	width: 500px;
-	height: 10px;
 	top: 700px;
 	left: 500px;
 
 
 }
 
+/* Bridge Style 1 */
 #bridge {
 	position: absolute;
-	background: #AAAAAA;
-	width: 300px;
-	height: 30px;
 
 	top: 800px;
 	left: 500px;
 
 }
+
+/* Bridge Style 2 */
+#bridge2 {
+	position: absolute;
+
+	top: 800px;
+	left: 800px;
+
+}
+
 
 #mast {
 	position: absolute;
@@ -94,9 +118,12 @@ img:first-child {
 
 }
 
+/* Smokestack styles */
 #smokestack {
 	position: absolute;
 	background: #fdc53e;
+
+	border-top: 9px solid black;
 	width: 30px;
 	height: 60px;
 

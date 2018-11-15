@@ -15,19 +15,44 @@
 
 	<body>
 		<!--Main page-->
-		<div id="container">
-			<!-- Each ship part has its own id, but all parts have the same class for dragging -->
-			<!--<h1 class="text-center bg-dark text-light">
-				Welcome! This is a page where you can drag and drop parts to make your dream ship.
-			</h1>-->
-
+		<!--<div id="container">
+		-->
 			<!--Navigation bar-->
 			<nav class="navbar navbar-expand-md bg-dark">
-				<h1 class="text-center text-light">
+				<h2 class="text-center text-light">
 					<span style="color: #fdc53e;">Welcome!</span> This is a page where you can drag and drop parts to make your <span style="color: #fdc53e;">warship of your dreams.</span>
-				</h1>
+					Pick one hull and start building!
+				</h2>
+
+
+
+				<!--Experimental feature: Allow the user to change the background by clicking a button.-->
+				<!--
+				<button type="button" class="btn btn-primary btn-lg" style="margin-left: 30px;">
+					Change Background color
+				</button>
+				-->
 			</nav>
 
+<!--
+			<script type="text/javascript">
+				jQuery('button').on('click', function() {
+					var bgcol = jQuery("body").css("background-color");
+
+					// For now, the user can change between the default color and yellow.
+					if(bgcol === "rgb(255, 255, 255)") {
+						jQuery("body").css("background-color", "#fdc53e");
+
+						
+					} else{
+						jQuery("body").css({
+							"background-color": "white"
+						});
+					}
+				});
+			</script>
+			-->
+			<div id="container-fluid">
 			<!--Turrets (Style 1) -->
 			<div id="turret1" class="candrag">
 				<img src = "turret1.svg" draggable=false>
@@ -50,10 +75,30 @@
 				<img src="hull.svg" draggable=false>
 			</div>
 
+			<!--Hull (Style 2)-->
+			<div id="hull2" class="candrag">
+				<img src="hull_2.svg" draggable=false>
+			</div>
+
+
 			<!--Superstructure and Bridge parts-->
 
-			<div id="center" class="candrag"></div>
-			<div id="bridge" class="candrag"></div>
+			<!--Elevated platform-->
+			<div id="center" class="candrag">	
+				<img src="core.svg" draggable=false>
+			</div>
+
+			<!--Bridge style 1-->
+			<div id="bridge" class="candrag">
+				<img src="bridge_1.svg" draggable=false>
+			</div>
+
+
+			<!--Bridge style 2-->
+			<div id="bridge2" class="candrag">
+				<img src="bridge_2.svg" draggable=false>
+			</div>
+
 			<div id="smokestack" class="candrag"></div>
 			<div id="smokestack" class="candrag"></div>
 
