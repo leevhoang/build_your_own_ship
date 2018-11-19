@@ -27,14 +27,12 @@ body {
 
 }
 
-
 #turret2 {
 	position: absolute;
 	top: 180px;
 	left: 50px;
 
 }
-
 
 #turret3 {
 	position: absolute;
@@ -43,11 +41,25 @@ body {
 
 }
 
-
 #turret4 {
 	position: absolute;
 	top: 180px;
 	left: 180px;
+
+}
+
+
+#turret1_s2{
+	position: absolute;
+	top: 180px;
+	left: 300px;
+
+}
+
+#turret2_s2{
+	position: absolute;
+	top: 180px;
+	left: 420px;
 
 }
 
