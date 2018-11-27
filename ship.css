@@ -3,11 +3,17 @@
 /* All the parts are arranged such that they don't overlap each other */
 
 
-/* Set initial bg color to change later */
+/* Allow the user to switch between a plain white background and a sky and sea background. */
+
+html {
+	height:100%;
+}
+
 body {
 	background-image: none;
 	background-color: white;
-
+	width:100%;
+	height:100%;
 }
 
 
@@ -82,7 +88,7 @@ img:first-child {
 	position: absolute;
 	width: 958px;
 	height:103px;
-	top: 500px;
+	top: 550px;
 	left: 500px;
 
 	z-index:1;
@@ -92,7 +98,7 @@ img:first-child {
 /* Hull Style 2 */
 #hull2{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 500px;
 	z-index:1;
 }
@@ -149,4 +155,27 @@ img:first-child {
 	top: 800px;
 	left: 80px;
 
+}
+
+/* Alternate background (ocean with sunny sky) */
+
+#sky {
+	background-color:#EA8825;
+}
+
+#sky > #sun {
+		position:relative;
+		background-color:yellow;
+		width:100px;
+		left: 700px;
+		top:50px;
+		height:100px;
+		border-radius:50%;
+}
+
+#sea {
+	background-color: #69D2E7;
+	width: 100%;
+	height: 50%;
+	z-index: 40;
 }

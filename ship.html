@@ -27,21 +27,25 @@
 
 
 				<!--Experimental feature: Allow the user to change the background by clicking a button.-->
-				<!--
+				
 				<button type="button" class="btn btn-primary btn-lg" style="margin-left: 30px;">
 					Change Background color
 				</button>
-				-->
+				
 			</nav>
 
-<!--
+
 			<script type="text/javascript">
+			/*
 				jQuery('button').on('click', function() {
 					var bgcol = jQuery("body").css("background-color");
 
 					// For now, the user can change between the default color and yellow.
 					if(bgcol === "rgb(255, 255, 255)") {
-						jQuery("body").css("background-color", "#fdc53e");
+						jQuery("body").css({
+							"background-color": "#69D2E7",
+							"height":"50%"
+						});
 
 						
 					} else{
@@ -50,75 +54,89 @@
 						});
 					}
 				});
+				*/
 			</script>
-			-->
-			<div id="container-fluid">
 			
-			<!-- All of the parts can be found below -->
-			<!--Turrets (Style 1) -->
-			<div id="turret1" class="candrag">
-				<img src = "parts/turret1.svg" draggable=false>
-			</div>
-
-			<div id="turret2" class="candrag">	
-				<img src = "parts/turret1_rev.svg" draggable=false>
-			</div>
-
-			<div id="turret3" class="candrag">
-				<img src = "parts/turret1.svg" draggable=false>
-			</div>
-
-			<div id="turret4" class="candrag">
-				<img src = "parts/turret1_rev.svg" draggable=false>
-			</div>
 			
-			<!--Turrets (Style 2) -->
-			<div id="turret1_s2" class="candrag">
-				<img src = "parts/turret2.svg" draggable=false>
+			<div id="container-fluid" class="h-100">
+			
+				<!-- All of the parts can be found below -->
+				<!--Turrets (Style 1) -->
+				
+				
+				<div id="turret1" class="candrag">
+					<img src = "parts/turret1.svg" draggable=false>
+				</div>
+
+				<div id="turret2" class="candrag">	
+					<img src = "parts/turret1_rev.svg" draggable=false>
+				</div>
+
+				<div id="turret3" class="candrag">
+					<img src = "parts/turret1.svg" draggable=false>
+				</div>
+
+				<div id="turret4" class="candrag">
+					<img src = "parts/turret1_rev.svg" draggable=false>
+				</div>
+				
+				
+				<!--Turrets (Style 2) -->
+				<div id="turret1_s2" class="candrag">
+					<img src = "parts/turret2.svg" draggable=false>
+				</div>
+
+				<div id="turret2_s2" class="candrag">	
+					<img src = "parts/turret2_rev.svg" draggable=false>
+				</div>
+
+				<!--Hull (Style 1)-->
+				<div id="hull" class="candrag">
+					<img src="parts/hull.svg" draggable=false>
+				</div>
+
+				<!--Hull (Style 2)-->
+				<div id="hull2" class="candrag">
+					<img src="parts/hull_2.svg" draggable=false>
+				</div>
+
+
+				<!--Superstructure and Bridge parts-->
+
+				<!--Elevated platform-->
+				<div id="center" class="candrag">	
+					<img src="parts/core.svg" draggable=false>
+				</div>
+
+				<!--Bridge style 1-->
+				<div id="bridge" class="candrag">
+					<img src="parts/bridge_1.svg" draggable=false>
+				</div>
+
+
+				<!--Bridge style 2-->
+				<div id="bridge2" class="candrag">
+					<img src="parts/bridge_2.svg" draggable=false>
+				</div>
+
+				<!--Smokestacks-->
+				<div id="smokestack" class="candrag"></div>
+				<div id="smokestack" class="candrag"></div>
+
+			
+
+				<!--Make all the objects draggable-->
+				<script type = "text/javascript" src="ship.js"></script>
+				
+				<!-- Sky (with a sun) and ocean background -->
+				<div id="sky" class="h-25">
+					<div id="sun"></div>
+				</div>
+				
+				<div id="sea" class="h-75"></div>
 			</div>
-
-			<div id="turret2_s2" class="candrag">	
-				<img src = "parts/turret2_rev.svg" draggable=false>
-			</div>
-
-			<!--Hull (Style 1)-->
-			<div id="hull" class="candrag">
-				<img src="parts/hull.svg" draggable=false>
-			</div>
-
-			<!--Hull (Style 2)-->
-			<div id="hull2" class="candrag">
-				<img src="parts/hull_2.svg" draggable=false>
-			</div>
-
-
-			<!--Superstructure and Bridge parts-->
-
-			<!--Elevated platform-->
-			<div id="center" class="candrag">	
-				<img src="parts/core.svg" draggable=false>
-			</div>
-
-			<!--Bridge style 1-->
-			<div id="bridge" class="candrag">
-				<img src="parts/bridge_1.svg" draggable=false>
-			</div>
-
-
-			<!--Bridge style 2-->
-			<div id="bridge2" class="candrag">
-				<img src="parts/bridge_2.svg" draggable=false>
-			</div>
-
-			<!--Smokestacks-->
-			<div id="smokestack" class="candrag"></div>
-			<div id="smokestack" class="candrag"></div>
-
-
-			<!--Make all the objects draggable-->
-			<script type = "text/javascript" src="ship.js"></script>
-		</div>
-
+		
+		
 	</body>
 
 </html>
