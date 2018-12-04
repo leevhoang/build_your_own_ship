@@ -26,35 +26,26 @@
 
 
 
-				<!--Experimental feature: Allow the user to change the background by clicking a button.-->
+				<!-- Allow the user to change the background by clicking a button. -->
 				
 				<button type="button" class="btn btn-primary btn-lg" style="margin-left: 30px;">
-					Change Background color
+					Change Background
 				</button>
 				
 			</nav>
 
 
 			<script type="text/javascript">
-			/*
-				jQuery('button').on('click', function() {
-					var bgcol = jQuery("body").css("background-color");
-
-					// For now, the user can change between the default color and yellow.
-					if(bgcol === "rgb(255, 255, 255)") {
-						jQuery("body").css({
-							"background-color": "#69D2E7",
-							"height":"50%"
-						});
-
-						
-					} else{
-						jQuery("body").css({
-							"background-color": "white"
-						});
-					}
+			
+				jQuery('button').on('click', function() {					
+					// Allow the user to toggle the background between the following:
+					// - A plain white background.
+					// - A simple sky and sea background. 
+					jQuery("#sky").toggle();
+					jQuery("#sea").toggle();
 				});
-				*/
+				
+				
 			</script>
 			
 			
@@ -129,11 +120,16 @@
 				<script type = "text/javascript" src="ship.js"></script>
 				
 				<!-- Sky (with a sun) and ocean background -->
+				<!-- This can be toggled on and off at will-->
 				<div id="sky" class="h-25">
 					<div id="sun"></div>
 				</div>
 				
-				<div id="sea" class="h-75"></div>
+				<div id="sea" class="h-75">
+					
+				</div>
+				
+				
 			</div>
 		
 		
