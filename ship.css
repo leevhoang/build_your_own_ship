@@ -161,12 +161,7 @@ img:first-child {
 #sky {
 	background-color:#ED9000;
 	width:100%;
-	
-	/* Attempt at making the sky blend in better with the ocean. 
-	-webkit-box-shadow: 0px 30px 33px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 30px 33px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 30px 33px 0px rgba(0,0,0,0.2);
-	*/
+
 }
 
 /* Give the orange sky a yellow sun. */
