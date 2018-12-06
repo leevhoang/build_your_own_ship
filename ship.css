@@ -1,9 +1,8 @@
-
 /* For assigning properties to ship parts */
 /* All the parts are arranged such that they don't overlap each other */
 
 
-/* Allow the user to switch between a plain white background and a sky and sea background. */
+/* The code below also allows the user to switch between a plain white background and a sky and sea background. */
 
 html {
 	height:100%;
@@ -160,7 +159,8 @@ img:first-child {
 /* Alternate background (ocean with sunny sky) */
 
 #sky {
-	background-color:#EA8825;
+	background-color:#ED9000;
+	width:100%;
 	
 	/* Attempt at making the sky blend in better with the ocean. 
 	-webkit-box-shadow: 0px 30px 33px 0px rgba(0,0,0,0.2);
