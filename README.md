@@ -7,7 +7,10 @@ How to install and use
 -----------------------
 
 Navigate to a directory of your choice and clone the project from Github onto your computer:
+
+```
 git clone https://github.com/leevhoang/build_your_own_ship.git
+```
 
 To start it, simply open the ship.html file in a browser of your choice.
 
