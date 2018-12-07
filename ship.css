@@ -4,8 +4,11 @@
 
 /* The code below also allows the user to switch between a plain white background and a sky and sea background. */
 
+
+/* Allows the sun and sky backgrounds to fit the screen.*/
 html {
 	height:100%;
+	
 }
 
 body {
@@ -20,7 +23,7 @@ body {
 .candrag {
 	cursor: pointer;
 	width: 100px;
-	height: 100px;
+	height: 50px;
 }
 
 /* Turrets have their own ids */
@@ -87,7 +90,7 @@ img:first-child {
 	position: absolute;
 	width: 958px;
 	height:103px;
-	top: 550px;
+	top: 500px;
 	left: 500px;
 
 	z-index:1;
@@ -97,7 +100,7 @@ img:first-child {
 /* Hull Style 2 */
 #hull2{
 	position: absolute;
-	top: 350px;
+	top: 300px;
 	left: 500px;
 	z-index:1;
 }
@@ -106,7 +109,7 @@ img:first-child {
 /* All center parts including the bridge, mast, and raised platform */
 #center {
 	position: absolute;
-	top: 700px;
+	top: 670px;
 	left: 500px;
 
 
@@ -116,8 +119,8 @@ img:first-child {
 #bridge {
 	position: absolute;
 
-	top: 800px;
-	left: 500px;
+	top: 500px;
+	left: 200px;
 
 }
 
@@ -125,8 +128,8 @@ img:first-child {
 #bridge2 {
 	position: absolute;
 
-	top: 800px;
-	left: 800px;
+	top: 300px;
+	left: 200px;
 
 }
 
@@ -151,7 +154,7 @@ img:first-child {
 	width: 30px;
 	height: 60px;
 
-	top: 800px;
+	top: 400px;
 	left: 80px;
 
 }
@@ -179,6 +182,6 @@ img:first-child {
 #sea {
 	background: #69D2E7;
 	width: 100%;
-	height: 50%;
+	
 	z-index: 40;
 }
