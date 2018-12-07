@@ -3,11 +3,13 @@ What this project is about
 
 This project allows the user to create his/her own warship using draggable parts, ranging from hulls to turrets and superstructure parts.
 
-How to use
+How to install and use
 -----------------------
 
-Clone the project from Github onto your computer.
-To start it, simply run the ship.html file.
+Navigate to a directory of your choice and clone the project from Github onto your computer:
+git clone https://github.com/leevhoang/build_your_own_ship.git
+
+To start it, simply open the ship.html file in a browser of your choice.
 
 Building your ship
 -----------------------
@@ -22,7 +24,7 @@ Changing the Background
 
 - To the far-right area of the navbar is a blue button called "Change Background." Clicking this button will alternate the background between plain white and a simple sky/ocean background.
 
-Resetting the part position
+Clearing your current work
 ---------------------------
 
 - To clear your current work and start from scratch, simply hit the F5 key on your keyboard or click the "Refresh" button on your browser.
@@ -35,4 +37,4 @@ Tips and tricks
 Known issues
 -----------------------
 
-- On Firefox, you may see blue squares when dragging a part.
+- On Firefox, blue squares appear around the part when dragging any part other than the smokestacks.
